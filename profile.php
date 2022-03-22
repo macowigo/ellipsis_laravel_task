@@ -49,7 +49,7 @@ if (!$_SESSION['Users']) {
                 </tr>
                 <tr>
                     <th>Email</th>
-                    <td><?php echo $email ?></td>
+                    <td><?php echo $User_result['email'] ?></td>
                 </tr>
             </thead>
         </table>

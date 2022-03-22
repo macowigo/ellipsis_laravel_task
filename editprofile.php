@@ -46,14 +46,14 @@ if (!$_SESSION['Users']) {
                <div class="input-field col l6 m9 s12">
                 <i class="material-icons prefix">account_circle</i>
                     <input id="firstname" name="fName" type="text" class="validate" minlength="3" 
-                    value="<?php echo $fname?>" required>
+                    value="<?php echo  $User_result['fname']?>" required>
                     <label for="firstname">First Name</label>
                     <span class="helper-text" data-error="Please enter valid first name" data-success="good"></span>
                 </div>
                 <div class="input-field col l6 m9 s12">
                 <i class="material-icons prefix">account_circle</i>
                     <input id="lastname" name="lName" type="text" class="validate" minlength="3" 
-                    value="<?php echo $lname?>"required>
+                    value="<?php echo $User_result['lname']?>"required>
                     <label for="lastname">Last Name</label>
                     <span class="helper-text" data-error="Please enter valid last name" data-success="good"></span>
                     </div>
