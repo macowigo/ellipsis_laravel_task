@@ -13,7 +13,7 @@ if (!$_SESSION['Users']) {
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MacowigoTech</title>
+    <title>ElipsisTask</title>
     <link rel="shortcut icon" href="../images/logo.png">
 
     <!-- CSS  -->

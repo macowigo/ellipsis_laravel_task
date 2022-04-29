@@ -1,5 +1,6 @@
 <?php
 date_default_timezone_set("Africa/Dar_es_Salaam");
+error_reporting(0);
 $DB_HOST = "localhost";
 $DB_USER = "root";
 $DB_PASS = "";

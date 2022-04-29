@@ -14,7 +14,7 @@ if (!$_SESSION['Users']) {
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MacowigoTech</title>
+    <title>ElipsisTask</title>
     <link rel="shortcut icon" href="../images/logo.png">
 
     <!-- CSS  -->
@@ -46,15 +46,13 @@ if (!$_SESSION['Users']) {
                <div class="input-field col l6 m9 s12">
                 <i class="material-icons prefix">account_circle</i>
                     <input id="firstname" name="fName" type="text" class="validate" minlength="3" 
-                    value="<?php echo  $User_result['fname']?>" required>
-                    <label for="firstname">First Name</label>
+                    value="<?php echo  $User_result['fname']?>" placeholder=" First Name" required>
                     <span class="helper-text" data-error="Please enter valid first name" data-success="good"></span>
                 </div>
                 <div class="input-field col l6 m9 s12">
                 <i class="material-icons prefix">account_circle</i>
                     <input id="lastname" name="lName" type="text" class="validate" minlength="3" 
-                    value="<?php echo $User_result['lname']?>"required>
-                    <label for="lastname">Last Name</label>
+                    value="<?php echo $User_result['lname']?>" placeholder=" Last Name"required>
                     <span class="helper-text" data-error="Please enter valid last name" data-success="good"></span>
                     </div>
          
