@@ -28,12 +28,15 @@ if (!$_SESSION['Users']) {
             <ul class="right hide-on-med-and-down">
                 <li class="white-text"><a href="dashboard">Dashboard</a></li>
                 <li><a href="profile">Profile</a></li>
+                <li><a href="generateurl">Generate Link</a></li>
                 <li><a href="logout">Logout</a></li>
             </ul>
             <ul id="nav-mobile" class="side-nav">
                 <li><a class="maroon-text">MACOWIGO TECH</a></li>
                 <li><a href="dashboard">Dashboard<i class="material-icons ">home</i></a></li>
-                <li><a href="register">Profile <i class="material-icons ">user</i></a></li>
+                <li><a href="profile">Profile <i class="material-icons ">account_circle</i></a></li>
+                <li><a href="generateurl">Generate Link<i class="material-icons ">add_link</i></a></li>
+                <li><a href="logout">Logout<i class="material-icons ">logout</i></a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
         </div>
@@ -63,8 +66,8 @@ if (!$_SESSION['Users']) {
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="../js/app.js"></script>
-    <script src="../js/material.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/material.js"></script>
 
 </body>
 

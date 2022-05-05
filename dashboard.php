@@ -36,7 +36,9 @@ if(!$_SESSION['Users'])
             <ul id="nav-mobile" class="side-nav">
                 <li><a class="maroon-text">MACOWIGO TECH</a></li>
                 <li><a href="dashboard">Dashboard<i class="material-icons ">home</i></a></li>
-                <li><a href="register">Profile <i class="material-icons ">user</i></a></li>
+                <li><a href="profile">Profile <i class="material-icons ">account_circle</i></a></li>
+                <li><a href="generateurl">Generate Link<i class="material-icons ">add_link</i></a></li>
+                <li><a href="logout">Logout<i class="material-icons ">logout</i></a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
         </div>
@@ -46,9 +48,10 @@ if(!$_SESSION['Users'])
         <table>
             <thead>
                 <tr>
-                <th>Short Link</th>
-                <th>Long Link</th>
-                <th>Actions</th>
+                <th>Generated Link</th>
+                <th>View Link</th>
+                <th>Edit Link</th>
+                <th>Delete Link</th>
                 </tr>
             </thead>
             <?php
@@ -57,17 +60,19 @@ if(!$_SESSION['Users'])
                 ?>
                 <tr>
                 <td><?php echo $link['short_url']?></td>
-                <td><?php echo $link['long_url']?></td>
                 <td>
                     <a  class=" btn-floating btn-small maroon " href="<?php echo $link['long_url']?>"
                     tittle="Click to view"><i class="material-icons">visibility</i></a>
+               </td>
+                  <td>
 
                     <a  class=" btn-floating btn-small maroon " href="edit_url?edit=<?php echo $link['urlid']?>"
-                    tittle="Click to view"><i class="material-icons">edit</i></a>
-
+                    tittle="Click to view"><i class="material-icons">edit</i></a>  
+             </td>
+                  <td>
                     <a  class=" btn-floating btn-small red " href="?delete=<?php echo $link['urlid']?>"
                     tittle="Click to view"><i class="material-icons">delete</i></a>
-            </td>
+                 </td>
 
                 </tr>
                 <?php
@@ -80,8 +85,8 @@ if(!$_SESSION['Users'])
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="../js/app.js"></script>
-    <script src="../js/material.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/material.js"></script>
 
 </body>
 

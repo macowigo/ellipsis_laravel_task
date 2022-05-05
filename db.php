@@ -1,8 +1,9 @@
 <?php
 date_default_timezone_set("Africa/Dar_es_Salaam");
-$DB_HOST = "159.203.178.161";
-$DB_USER = "root";
-$DB_PASS = "Macowigo@tech";
+//error_reporting(0);
+$DB_HOST = "localhost";
+$DB_USER = "sabato";
+$DB_PASS = "Macowigo1@";
 $DB_NAME = "URL";
 
 $OPTIONS = [
@@ -12,7 +13,7 @@ $OPTIONS = [
 ];
 
 try {
-	$DB_con = new PDO("mysql:host={$DB_HOST};dbname={$DB_NAME}", $DB_USER, $DB_PASS, $OPTIONS);
+	$DB_con = new PDO("mysql:host={$DB_HOST};port=8888;dbname={$DB_NAME}", $DB_USER, $DB_PASS, $OPTIONS);
 } catch (PDOException $e) {
 	echo $e->getMessage();
 }

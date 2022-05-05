@@ -28,13 +28,11 @@ include_once("CONFIG/Reg.php");
             <ul id="nav-mobile" class="side-nav">
                 <li><a class="maroon-text">MACOWIGO TECH</a></li>
                 <li><a href="login">Login<i class="material-icons ">home</i></a></li>
-                <li><a href="register">Register <i class="material-icons ">user</i></a></li>
+                <li><a href="register">Register <i class="material-icons ">person_add</i></a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
         </div>
     </nav>
-
-
 
     <div class="container">
         <span class="materialize-red-text"><?php echo $error; ?></span>
@@ -42,17 +40,16 @@ include_once("CONFIG/Reg.php");
         <form method="post">
             <div class="input-field">
                 <i class="material-icons prefix">account_circle</i>
-
                 <input id="email" name="email" type="email" class="validate" required>
-                <label for="email">Username</label>
+                <label for="email">Email</label>
                 <span class="helper-text" data-error="Please enter Valid email Address" data-success="right"></span>
             </div>
             <div class="input-field">
                 <i class="material-icons prefix">lock</i>
                 <input id="password" name="password" type="password" class="validate" required>
-                <label for="password">Password</label>
                 <span toggle="#password" class="field-icon toggle-password"></span>
                 <span class="helper-text" data-error="please enter your password" data-success="right"></span>
+                <label for="password">Password</label>
             </div>
 
             <!-- <a href="ForgotPass">Forgot Password?</a> -->
@@ -71,8 +68,8 @@ include_once("CONFIG/Reg.php");
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="../js/app.js"></script>
-    <script src="../js/material.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/material.js"></script>
 
 </body>
 
